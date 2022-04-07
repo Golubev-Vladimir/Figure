@@ -31,6 +31,9 @@ public class Handler {
 
     public void startReadWrite(String path) {
         String reader = readFileContentsOrNull(path);
+        if (reader == null) {
+            return;
+        }
 
         if (inPutFileIsEmpty(reader)) {
             return;

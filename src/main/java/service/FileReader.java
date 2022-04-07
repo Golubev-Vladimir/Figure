@@ -23,7 +23,7 @@ public class FileReader {
         } catch (IOException e) {
             LOG.error("Файл не может быть прочитан. " +
                     "Возможно нужный файл не размещен в каталоге.");
-            return "";
+            return null;
         }
     }
 }
